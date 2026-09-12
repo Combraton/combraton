@@ -2,7 +2,7 @@
 
 A spatial control plane for building large greenfield and brownfield projects with existing agentic harnesses.
 
-> Bootstrap documentation only. No product runtime, released API, installation command or performance claim is established here. The reviewed architecture is `architecture-v1-20260912`; its full canonical documents have not yet been imported into these repositories. These READMEs summarize boundaries and do not replace the specifications.
+> Bootstrap documentation only. No product runtime, released API, installation command or performance claim is established here. The reviewed architecture is `architecture-v1-20260912`, published as `public-development-v1-20260913`. Canonical specifications are available through [the documentation map](docs/README.md). This README is an overview, not the full specification.
 
 Combraton keeps the human, agents and running code connected through explicit intent, workflows, evidence, history and steering. Its success is better accepted work and less reconstruction effort than disciplined use of the same harnesses individually, accounting for time, cost and attention.
 
@@ -43,7 +43,7 @@ flowchart TB
 
 Establish a small versioned protocol and failure fixtures first. Develop PIO and CBR foundations in parallel against those contracts. Prototype and assess spatial interaction alongside them. Integrate an early, narrow control-plane flow before either subsystem is feature-complete; expand only after its required evidence passes.
 
-The first integrated scenario is a scoped code change with a failed attempt, preserved evidence/context, controller restart and fresh-harness continuation. See [BOOTSTRAP.md](BOOTSTRAP.md) for the work model, stack decisions and self-development transition.
+The first integrated scenario is a scoped code change with a failed attempt, preserved evidence/context, controller restart and fresh-harness continuation. See [BOOTSTRAP.md](BOOTSTRAP.md) for the work model, unresolved stack selections and deferred dogfooding.
 
 ## Loom UI
 
@@ -53,4 +53,8 @@ Older architecture material uses **Comreton**. **Combraton** is the confirmed Gi
 
 ## Implementation status
 
-Architecture boundaries are settled. Concrete schemas, package versions, qualified models, renderer and enforcement backends require bounded implementation experiments. Do not infer a chosen Pi/Prime SDK or numerical budget from research examples. No license has been selected in this bootstrap; repository visibility is initially private.
+Architecture boundaries are settled. Concrete schemas, package versions, qualified models, renderer and enforcement backends require bounded implementation experiments. Do not infer a chosen Pi/Prime SDK or numerical budget from research examples. No license has been selected in this bootstrap; the repository is public.
+
+## Working on this repository
+
+Read [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md), [the documentation map](docs/README.md), and [verification](docs/VERIFICATION.md). Use existing native harnesses for development. **Combraton self-development is deferred until usable v0.1 releases of all four projects.** Public visibility does not select a license; no project license has been added yet.

@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-13",
+  "scope": "Public documentation and development setup; no product runtime or ECC installation validated",
+  "checks": {
+    "markdown_files": 68,
+    "resolved_file_links": 411,
+    "file_link_errors": 0,
+    "mermaid_rendered": 32,
+    "mermaid_errors": 0,
+    "source_import_hashes_verified": 29,
+    "checker_negative_fixtures": [
+      "missing link",
+      "unclosed fence",
+      "missing CLAUDE import"
+    ],
+    "valid_checker_fixture": "passed",
+    "git_diff_cached_check": "passed in all four repositories"
+  },
+  "limitations": [
+    "Remote external links and Markdown fragments not exhaustively tested",
+    "Loom inspected as simulated interaction reference, not full UI certification",
+    "Live Claude/Codex instruction loading requires a fresh client session",
+    "ECC source inspected at pinned commit; its installer and test suite were not executed",
+    "No product runtime, memory benchmark or integration acceptance has run"
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "edition": "public-development-v1-20260913",
+  "source_baseline": "architecture-v1-20260912",
+  "files": [
+    {
+      "source": "README.md",
+      "source_sha256": "bfda96d3bd48f44ad545cb68aebc778d7ef897f850ae4e4d142e27aec7fee269",
+      "repository": "combraton",
+      "published_path": "docs/architecture/README.md",
+      "published_sha256": "0e3f7b1898904f3b891003623e0f4ffbad93c4c546b2db89091235a58632efec"
+    },
+    {
+      "source": "HANDOFF.md",
+      "source_sha256": "20a3ff3a08c5259d43bc02790cfee7c962592aec831a63c57d7506c475e76484",
+      "repository": "combraton",
+      "published_path": "docs/architecture/HANDOFF.md",
+      "published_sha256": "9093dabad611c2969675ee0fb34bfdfb0464673c983e68db4a930eb3c948ba95"
+    },
+    {
+      "source": "BASELINE.md",
+      "source_sha256": "9d3dab49a05df502dc5a9b7e56e46fd7d74f0ff6777f87284bf47391063a0c99",
+      "repository": "combraton",
+      "published_path": "docs/architecture/BASELINE.md",
+      "published_sha256": "76e549080f9b1e524eef696a8ee9839a64850f70fbac704e18ffaace95e655b1"
+    },
+    {
+      "source": "VISION.md",
+      "source_sha256": "fdbd39a76ba41b6f5b16092808ac5ba657943758964dbd561d7171b7a76ec1b2",
+      "repository": "combraton",
+      "published_path": "docs/architecture/VISION.md",
+      "published_sha256": "4ff058ac4c41ef48ebc015636944de78541929c7a241f370886329964cfc432e"
+    },
+    {
+      "source": "ARCHITECTURE.md",
+      "source_sha256": "bafd39e4e50201f5ab2661ee90020243b498c491b317d367335f89aa887c427b",
+      "repository": "combraton",
+      "published_path": "docs/architecture/ARCHITECTURE.md",
+      "published_sha256": "ac44a2d0c90386360d2c3e25ee9a7f7ab1b3f21d7581aca89d8bf3c207bd3f74"
+    },
+    {
+      "source": "STEERING.md",
+      "source_sha256": "8b71435088d5dc857473a8b322dcbb9557cea184a2412cfa6b354cef12238e4b",
+      "repository": "combraton",
+      "published_path": "docs/architecture/STEERING.md",
+      "published_sha256": "5f782917fc333030279bc259a9fb85ba258a00cae293a8751a5ca869b39696c6"
+    },
+    {
+      "source": "MODEL.md",
+      "source_sha256": "07d5e0efd5b4247a02945750c55668e25c753de672a3ec537a0e46482bb9aae0",
+      "repository": "combraton",
+      "published_path": "docs/architecture/MODEL.md",
+      "published_sha256": "6cc120d6323b21cb98e306e2bfd904e948b7458ec662a8690737ac57bc2a65d0"
+    },
+    {
+      "source": "TEMPLATES.md",
+      "source_sha256": "0c23420dbebfaab314d37ddca85ba6aa211ac125097542c09606937e0703c29b",
+      "repository": "combraton",
+      "published_path": "docs/architecture/TEMPLATES.md",
+      "published_sha256": "03c9990ebdf3aecce354144f05a464573b86b56d798fabdddf316617cbf36d4e"
+    },
+    {
+      "source": "HISTORY.md",
+      "source_sha256": "034a406b024219aa7baf8a4fb7f1fc9eeb98dd4a8600c76a96b178231eefef5f",
+      "repository": "combraton",
+      "published_path": "docs/architecture/HISTORY.md",
+      "published_sha256": "cf4bab1d6c3c0bdd1736be4f06833f3e173dbcd449510419271475babd938a08"
+    },
+    {
+      "source": "FLOWS.md",
+      "source_sha256": "7c5ec6d6b8d073c1c0f9b3215cb902ae67b51d6c3bfe5c0318ec9632e8023f4c",
+      "repository": "combraton",
+      "published_path": "docs/architecture/FLOWS.md",
+      "published_sha256": "f2ad0725b040b8bc70fc424195219b59bbfec84db97b3aa2b844b812376b627a"
+    },
+    {
+      "source": "UI.md",
+      "source_sha256": "c60bac0d237f69430c9b35bde2f296a338ec91b7d68cc37b62570cb0325f9baa",
+      "repository": "combraton",
+      "published_path": "docs/architecture/UI.md",
+      "published_sha256": "97c88576b7b937a4f43a74edebb0ebfdf53b74eceaa7c409f975178a139c4095"
+    },
+    {
+      "source": "pio/SPEC.md",
+      "source_sha256": "51424a8e6e5bec0a0d87e47c4f8ea71c2d6953aadf450da3b174626284d640ee",
+      "repository": "pio",
+      "published_path": "docs/spec/SPEC.md",
+      "published_sha256": "3507669e7a521da5c5c8cbafb8b8b492bc4ad549173bb1a0b6700c482527ece5"
+    },
+    {
+      "source": "pio/INTERNALS.md",
+      "source_sha256": "e731d4a39294fa3aef999b9c8bea2eb6cc98ebfd0d8cac8cc0b4b32b7d2ec229",
+      "repository": "pio",
+      "published_path": "docs/spec/INTERNALS.md",
+      "published_sha256": "9e403ee6a1d19b195670e47bccb8624b814ed1a51492b0dbd26d7719c21df644"
+    },
+    {
+      "source": "cbr/SPEC.md",
+      "source_sha256": "f75a90beb87df970153993e44226eb15b7c36a456d9549e37acb687c58b01b5b",
+      "repository": "cbr",
+      "published_path": "docs/spec/SPEC.md",
+      "published_sha256": "77977bed2ef9d330d3afa0ec6803ba8269545a29603c3e03efea92046c89cf49"
+    },
+    {
+      "source": "cbr/MEMORY-ENGINE.md",
+      "source_sha256": "61a316b735df3fa98c141a3e0a9e5b3dd64b1816124348609e5c87d7c80c532e",
+      "repository": "cbr",
+      "published_path": "docs/spec/MEMORY-ENGINE.md",
+      "published_sha256": "bbbeb52745ea8b83fb46b2df25dc9d6e2c5107888ccd332961b71d54b8eda23c"
+    },
+    {
+      "source": "cbr/PREPARATION-AND-DELIVERY.md",
+      "source_sha256": "cfb02a617637971f361ceeab0f703c5f376598fe0c2a90ad35afd5f08dfe143c",
+      "repository": "cbr",
+      "published_path": "docs/spec/PREPARATION-AND-DELIVERY.md",
+      "published_sha256": "59e7814b5d8bb3237c578af6bc7c5c0bfc550735d6b459cf6262940ccd7432bb"
+    },
+    {
+      "source": "cbr/MODEL-RUNTIME.md",
+      "source_sha256": "41a374eff62ba5b6ab4cab651da9ec466831cf05d28329647d9fbd7e2528ff64",
+      "repository": "cbr",
+      "published_path": "docs/spec/MODEL-RUNTIME.md",
+      "published_sha256": "28f50515ee5c5660a2d756aaf4463550e907553e8170ca66b8916a002b383f15"
+    },
+    {
+      "source": "cbr/INTERNALS.md",
+      "source_sha256": "759d6cba42fd91b2e418ab67c7f03a0a0ba88ae690c2797faf29ae12d4fef3ae",
+      "repository": "cbr",
+      "published_path": "docs/spec/INTERNALS.md",
+      "published_sha256": "a049ac5a670b8baa9d4df3e282431c6d3140ae1e56c4998c73ca2a02879d93ce"
+    },
+    {
+      "source": "protocol/SPEC.md",
+      "source_sha256": "5b32e55215237a4d47e2d3aeefd631cee8485a506e8fbfade4f8a56a5e89b7f6",
+      "repository": "protocol",
+      "published_path": "docs/spec/SPEC.md",
+      "published_sha256": "5e04f0c4f5b81989265765416c8804fb83a79cc742db18ca12e5ad8c1059618d"
+    },
+    {
+      "source": "VERIFICATION.md",
+      "source_sha256": "5073c1e08e434568bcd97a90d386c2748b2aa1db1c5d3cfd34eb891be624eef5",
+      "repository": "combraton",
+      "published_path": "docs/architecture/VERIFICATION.md",
+      "published_sha256": "57dfde6c988cc0048557d811f8217013b4d4195f219ae469ea2c88a3706913a2"
+    },
+    {
+      "source": "STORAGE.md",
+      "source_sha256": "486718fa114af8b0acbe5d85ed3252a2058ab70f1cfdf3c0da3d6f7a2e812e0f",
+      "repository": "combraton",
+      "published_path": "docs/architecture/STORAGE.md",
+      "published_sha256": "b2b853acf0796616522bd0137a0149849d0b797e37538eb1ec068a05f450971d"
+    },
+    {
+      "source": "EXTENSIONS.md",
+      "source_sha256": "1be07ad3782bf43fd3f4099165d0168f3143493801b09300bbf6e948a076e6a3",
+      "repository": "combraton",
+      "published_path": "docs/architecture/EXTENSIONS.md",
+      "published_sha256": "6e9935bf4db5de1ebbaa19d1afb183ae31fdd5587dfac463e02f7bcfae2ee6df"
+    },
+    {
+      "source": "PLAN.md",
+      "source_sha256": "d18af6552a53eaac00a41d73d217b74d1633ee149854073ba8ec08924eb64f5e",
+      "repository": "combraton",
+      "published_path": "docs/architecture/PLAN.md",
+      "published_sha256": "c8a8ba1851e854d4382e4ef5faad7d545cdb46fafb6af420be9484b8326b1020"
+    },
+    {
+      "source": "RESEARCH.md",
+      "source_sha256": "a8ff7406dd3632a148ef56e7cfdf15f0fab81393002aeb273d5f7f4792168dbc",
+      "repository": "combraton",
+      "published_path": "docs/architecture/RESEARCH.md",
+      "published_sha256": "d3ae05ecc07298fa0f077eee859b12966db6a62e33b7c856bd5756fcfd9be246"
+    },
+    {
+      "source": "DECISIONS.md",
+      "source_sha256": "807afdad286567093d5666057d5eb0631f9413a46bf117136554d24c923d78d1",
+      "repository": "combraton",
+      "published_path": "docs/architecture/DECISIONS.md",
+      "published_sha256": "818d904d04c3fd9b44b9c5a5b31fcebbd35944a9703dc1482bb4ec6882a71f76"
+    },
+    {
+      "source": "reference/diagrams/pio-internals-20260909.svg",
+      "source_sha256": "fb8c4fd7807499e66f10288e516234159bb66afbb185c8abc5a11480a370cb65",
+      "repository": "pio",
+      "published_path": "docs/assets/pio-internals.svg",
+      "published_sha256": "fb8c4fd7807499e66f10288e516234159bb66afbb185c8abc5a11480a370cb65"
+    },
+    {
+      "source": "reference/diagrams/cbr-internals-20260909.svg",
+      "source_sha256": "07008fe70c9b90b10b55d423716d60b112e796e69939586868729a941f6ef742",
+      "repository": "cbr",
+      "published_path": "docs/assets/cbr-internals.svg",
+      "published_sha256": "07008fe70c9b90b10b55d423716d60b112e796e69939586868729a941f6ef742"
+    },
+    {
+      "source": "cbr/assets/context-runtime-20260912.svg",
+      "source_sha256": "2bd1f4c5307f14b1cdb79ef5c4ef35b205f04597d447944e51040b178955a298",
+      "repository": "cbr",
+      "published_path": "docs/assets/context-runtime.svg",
+      "published_sha256": "2bd1f4c5307f14b1cdb79ef5c4ef35b205f04597d447944e51040b178955a298"
+    },
+    {
+      "source": "cbr/assets/memory-engine-20260912.svg",
+      "source_sha256": "15a81692e45e250e9f64d119cb39ee07cd8b57b9cce5190fc6116f8582b8c3f1",
+      "repository": "cbr",
+      "published_path": "docs/assets/memory-engine.svg",
+      "published_sha256": "15a81692e45e250e9f64d119cb39ee07cd8b57b9cce5190fc6116f8582b8c3f1"
+    }
+  ]
+}
