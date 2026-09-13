@@ -13,3 +13,7 @@ For cross-repository work, also read the affected public contracts: [PIO](https:
 
 - [ECC and development research](research/DEVELOPMENT-WORKFLOW-AND-ECC.md).
 - [Full shared architecture map](architecture/README.md).
+
+- [Standalone release gates](https://github.com/Combraton/combraton/blob/main/docs/STANDALONE-RELEASES.md) and [accepted sequencing decision](https://github.com/Combraton/combraton/blob/main/docs/decisions/001-standalone-first-and-evaluation.md).
+- [PIO standalone client contract](https://github.com/Combraton/pio/blob/main/docs/spec/STANDALONE-CLIENT.md).
+- [Cross-product benchmarks](https://github.com/Combraton/benchmarks).

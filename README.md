@@ -41,7 +41,7 @@ flowchart TB
 
 ## Development sequence
 
-Establish a small versioned protocol and failure fixtures first. Develop PIO and CBR foundations in parallel against those contracts. Prototype and assess spatial interaction alongside them. Integrate an early, narrow control-plane flow before either subsystem is feature-complete; expand only after its required evidence passes.
+Complete the agreed standalone Protocol contracts/conformance first. Build PIO and CBR in parallel to their independent release scopes; validate the three together using PIO's CLI/TUI with optional CBR and headless clients. After accepted standalone releases, begin thin Combraton integration and feed versioned improvements back upstream. See [release gates](docs/STANDALONE-RELEASES.md) and [benchmarks](https://github.com/Combraton/benchmarks).
 
 The first integrated scenario is a scoped code change with a failed attempt, preserved evidence/context, controller restart and fresh-harness continuation. See [BOOTSTRAP.md](BOOTSTRAP.md) for the work model, unresolved stack selections and deferred dogfooding.
 

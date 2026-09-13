@@ -13,6 +13,10 @@ Start with [README](README.md) and [the documentation map](docs/README.md), then
 - Routine investigation and repair continue within agreed scope. Hold only named consequential transitions whose conditions are unmet; direction/authority/reserved judgments stay human-controlled.
 - Keep selected intent, observed execution, memory claims, applicability and human acceptance distinct. Mock states cannot stand in for observations.
 
+## Current standalone-first milestone
+
+Begin Combraton runtime/service integration only after accepted Protocol/PIO/CBR standalone releases and their combined evaluation. The desktop calls public services directly; it does not embed PIO's TUI. Follow [release gates](https://github.com/Combraton/combraton/blob/main/docs/STANDALONE-RELEASES.md) and [ADR 001](https://github.com/Combraton/combraton/blob/main/docs/decisions/001-standalone-first-and-evaluation.md). Comparative evaluation lives in [benchmarks](https://github.com/Combraton/benchmarks); product acceptance remains evidence-based.
+
 ## Work and coordination
 
 Inspect the assigned issue/task, branch, head, worktree and uncommitted changes before editing. Preserve unrelated work. For a large task, persist a small plan with outcome, scope, acceptance, dependencies and next step in `docs/work/` or the linked issue; do not rely on chat alone. One owner per task; one isolated worktree per concurrent writer. Agree shared contracts before consumers diverge.

@@ -33,3 +33,7 @@ CBR may publish authorized memory revisions through validation; it cannot change
 The [selection table](BASELINE.md) assigns schema freeze, SDK/language packaging, sandbox backend, renderer, model qualification, numerical limits and review defaults to milestones. Research citations, example token counts and inherited package names do not select dependencies. These need recorded evidence, not another blanket architecture approval ceremony.
 
 If a candidate cannot satisfy the accepted semantics, document the failed fixture and propose a bounded architecture change. Otherwise implement within the baseline and record the selected component/version. A future build instruction specifies the phase; this task finalizes documentation only.
+
+## Subsequent accepted decision: standalone-first development
+
+[ADR 001](../decisions/001-standalone-first-and-evaluation.md), accepted 13 September 2026, replaces the earlier early-Combraton integration sequence. Protocol, PIO and CBR reach agreed independent release gates and combined standalone validation through PIO's CLI/TUI before Combraton implementation. Separate benchmark infrastructure measures public behavior; core ownership remains unchanged.

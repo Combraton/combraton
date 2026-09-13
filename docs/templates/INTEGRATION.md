@@ -1,6 +1,6 @@
 # Integration evidence
 
-Template, not a claim that any integration has run.
+Template, not a claim that any integration has run. For initial standalone validation, Combraton is explicitly absent; record Protocol, PIO, CBR and benchmark/fixture revisions. Later control-plane evaluations add Combraton.
 
 ## Journey
 
@@ -13,7 +13,8 @@ Feature/acceptance link, expected outcome, distinguishing negative case and rese
 | Protocol | Fill exact revision | |
 | PIO | Fill exact revision | |
 | CBR | Fill exact revision | |
-| Combraton | Fill exact revision | |
+| Benchmarks / fixture / scorer | Fill exact revision | |
+| Combraton | Absent for standalone gate; otherwise exact revision | |
 | Harness / model / adapter | Fill actual versions | |
 
 ## Reproduction and observations
@@ -25,3 +26,5 @@ Record the success case and affected failure/recovery cases, including any sourc
 ## Review and acceptance
 
 Review base/head per affected PR, concrete findings and fixes, current compatibility limitations, actual human decision/authority when required. Individually passing tests do not certify the combination. If a revision changes, rerun affected integration checks or explicitly mark this evidence historical.
+
+Use the [benchmark run record](https://github.com/Combraton/benchmarks/blob/main/docs/RUN-RECORD.md) for comparative trials. A conformance pass and a task-quality result are separate claims.

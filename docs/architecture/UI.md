@@ -118,3 +118,7 @@ The first interaction prototype, after architecture agreement and before committ
 Show preparation as evidence/context state on the existing work surface, not a new canvas level or fake harness node. Distinguish advisory enrichment, a bounded initial-context wait and a condition for a later transition. The user can inspect the required item, source basis, gaps, preparation cost and work that continues independently.
 
 A project can show partial orientation with useful task artifacts while broader assimilation remains incomplete. Do not label it “understood” from repository age or a model confidence score. Packet inspection shows exact initial content and later deltas, actual delivery timing and missing observations. Late context is useful history or repair input, not evidence that an earlier mistake was prevented. This view uses [the delivery contract](https://github.com/Combraton/cbr/blob/main/docs/spec/PREPARATION-AND-DELIVERY.md) and existing steering/history operations.
+
+## Independent PIO terminal interface
+
+This chapter specifies Combraton's spatial desktop. PIO separately owns a [CLI/TUI client](https://github.com/Combraton/pio/blob/main/docs/spec/STANDALONE-CLIENT.md) for supported-harness discovery, execution management and optional CBR context. It needs no canvas, template stages or Combraton project model. The desktop uses public PIO/CBR APIs directly; it does not embed the terminal UI. Neither presentation owns execution or memory truth.

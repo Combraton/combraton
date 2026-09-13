@@ -44,3 +44,7 @@ Redirected historical paths:
 - `reference/reading-order.json`
 - `reference/revisions/before-architecture-baseline-20260912/manifest.json`
 - `reference/source-checks.json`
+
+## Changes after the initial public import
+
+[ADR 001](../decisions/001-standalone-first-and-evaluation.md) records the accepted standalone-first/client/evaluation update. The initial `source-import.json` hashes remain historical provenance for the first publication; current files can differ after reviewed changes, whose exact versions are in Git. Do not refresh the original import hashes to erase that distinction.

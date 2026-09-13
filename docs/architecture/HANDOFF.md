@@ -58,7 +58,7 @@ Direct calls, tool loops and optional programmatic workers obey aggregate budget
 
 ## 6. Where implementation starts
 
-Phase 0 is complete as an architecture baseline. Begin a later authorized build with [PLAN Phase 1](PLAN.md): schemas/failure fixtures and spatial interaction prototyping. Resolve components at their milestones. Prove PIO and CBR independently, then one integrated migration/repair/steering/restart story before broad expansion.
+Phase 0 is complete as an architecture baseline. Begin a later authorized build with [PLAN Phase 1](PLAN.md): standalone schemas/failure fixtures. Resolve components at their milestones. Complete the agreed standalone PIO/CBR scopes and their CLI/TUI-based combined evaluation first. After accepted standalone releases, implement the thin Combraton migration/repair/steering/restart story. [ADR 001](../decisions/001-standalone-first-and-evaluation.md) and [release gates](../STANDALONE-RELEASES.md) govern this revised order.
 
 Unknown required semantics fail explicitly until their contract is defined. Documentation examples are not generated API specifications. Do not claim a phase complete from diagrams or fake providers where PLAN requires real adapters or downstream outcomes.
 

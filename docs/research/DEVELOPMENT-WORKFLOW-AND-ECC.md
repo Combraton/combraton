@@ -1,5 +1,7 @@
 # Research: developing four independent products with Claude Code and Codex
 
+> Historical assessment. [ADR 001](../decisions/001-standalone-first-and-evaluation.md) subsequently superseded this report's early-Combraton integration recommendation. ECC source findings remain the dated assessment; use current DEVELOPMENT and standalone release gates for build order.
+
 Reviewed 13 September 2026. Recommendation: **use a small repository-centered workflow; adapt selected ECC ideas; do not install ECC as the shared development platform now.** This is a source-backed engineering assessment, not a benchmark proving that the proposed workflow improves results.
 
 The resulting operating agreement is [DEVELOPMENT](../DEVELOPMENT.md). Architecture remains governed by the [public edition](../architecture/PUBLICATION.md). Combraton self-development is deferred until usable v0.1 releases of all four projects.

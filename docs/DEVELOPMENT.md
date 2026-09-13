@@ -1,10 +1,10 @@
 # How we build Combraton
 
-Development agreement `development-v1-20260913`. This is the single canonical development workflow for all four repositories. It applies to building the products with existing Claude Code, Codex and ordinary development tools. **Combraton self-development is deferred until roughly v0.1 of all four projects has shipped and passed its relevant acceptance checks.**
+Development agreement `development-v2-20260913`, superseding the earlier integration order under [ADR 001](decisions/001-standalone-first-and-evaluation.md). This is the single canonical development workflow for the four product repositories and their benchmark infrastructure. It applies to building the products with existing Claude Code, Codex and ordinary development tools. **Combraton self-development is deferred until roughly v0.1 of all four projects has shipped and passed its relevant acceptance checks.**
 
-We optimize for accepted work, continuity and understandable decisions. More agents, more tokens and more completed tasks are not success by themselves. The [research assessment](research/DEVELOPMENT-WORKFLOW-AND-ECC.md) explains evidence, alternatives and limitations.
+We optimize for accepted work, continuity and understandable decisions. More agents, more tokens and more completed tasks are not success by themselves. The [research assessment](research/DEVELOPMENT-WORKFLOW-AND-ECC.md) explains evidence, alternatives and limitations; its earlier integration-order recommendation is superseded. [Standalone release gates](STANDALONE-RELEASES.md) define when Combraton implementation can begin.
 
-## 1. Four repositories, one understandable feature
+## 1. Four products and separate evaluation infrastructure
 
 | Repository | Owns | Must not become |
 |---|---|---|
@@ -12,6 +12,8 @@ We optimize for accepted work, continuity and understandable decisions. More age
 | [PIO](https://github.com/Combraton/pio) | Standalone harness execution, process/workspace identities, receipts and recovery | The authority deciding project direction or whether a claim is true |
 | [CBR](https://github.com/Combraton/cbr) | Standalone evidence, memory revisions, bounded model jobs and exact context packets | An agent that silently approves its own conclusions as project policy |
 | [Protocol](https://github.com/Combraton/protocol) | Independent versioned contracts, compatibility rules and conformance fixtures | A scheduler, a shared writable database or a Combraton-only API |
+
+[Benchmarks](https://github.com/Combraton/benchmarks) owns reproducible cross-product scenarios, comparisons and result manifests. It is a fifth repository, not a fifth runtime service; Protocol still owns normative conformance fixtures. Product-local tests stay with their services.
 
 PIO and CBR must pass standalone acceptance without a running Combraton. A documented public integration is allowed; a private sibling import or shared database write is not. The organizational repository layout does not require four different programming languages or four separate teams.
 
@@ -31,7 +33,7 @@ Record the actual harness/model/version when comparing outcomes. Choose future a
 
 Use what GitHub already provides:
 
-- **Feature issue:** overall outcome, affected repositories, linked tasks and integration acceptance. Cross-repository features live in Combraton; standalone features can stay in their own repository.
+- **Feature issue:** overall outcome, affected repositories, linked tasks and integration acceptance. Use the leading product repository: PIO for its standalone client/CBR feature, Protocol for a contract change, Benchmarks for a comparative evaluation, and Combraton for later control-plane features. Link dependent issues; do not create duplicate feature records.
 - **Component issue:** one owner, bounded scope, dependencies and measurable checks. A small user-authorized fix does not need an issue before investigation begins.
 - **Pull request:** concrete diff, actual validation, review and linked issues.
 - **Versioned docs:** architecture, decisions, multi-session plans and handoffs. Save consequential knowledge here instead of relying on a particular chat.
@@ -50,16 +52,15 @@ flowchart TD
     A --> K[Agree required contract slice and failure examples]
     K --> P[PIO implementation task]
     K --> B[CBR implementation task]
-    K --> C[Combraton UI and integration task]
     P --> PR[PIO review and tests]
     B --> BR[CBR review and tests]
-    C --> CR[Control-plane review and tests]
-    PR --> I[Integration at recorded repository revisions]
+    PR --> I[Standalone PIO client and CBR integration at pinned revisions]
     BR --> I
-    CR --> I
     I --> J[Human sees the actual journey and remaining limits]
     J --> D[Accept, revise direction, or continue scoped repair]
 ```
+
+This example covers the standalone-first stage. Combraton tasks enter the same feature lifecycle only after the [standalone release gates](STANDALONE-RELEASES.md) are accepted.
 
 **Frame.** Describe the user-visible outcome and its distinguishing test. “Show context” is too vague. “Show which exact context packet was bound to this attempt, and do not label a generated packet delivered when the adapter cannot confirm delivery” is testable.
 
@@ -75,11 +76,15 @@ flowchart TD
 
 **Accept.** Present the outcome, divergence, checks and remaining judgments in a concise decision packet. The authorized maintainer merges according to the task's existing authority; the workflow does not grant agents publication, deployment or credential authority. Re-ask only when authority, direction or a reserved judgment actually changes.
 
-## 5. Protocol first means a slice first
+## 5. Standalone-first development
 
-Do not finish the whole protocol, then the whole PIO, then the whole CBR, then begin the desktop. That delays the most useful feedback.
+Implement and publish the agreed standalone protocol surface with schemas, profile dependencies, failure semantics and conformance fixtures. Define its release scope before building; not every future Coordination or Remote extension is a prerequisite. Unimplemented profiles must remain explicitly unsupported.
 
-Agree a small protocol slice with positive and negative examples. PIO and CBR then build against it while Combraton builds a thin integration and the UI interaction. The next real journey exposes the next needed contract.
+Build PIO and CBR in parallel to their complete agreed independent release scopes. PIO provides a usable native CLI/TUI that discovers and manages supported harnesses. Its standalone client optionally obtains CBR context through public profiles under user-selected policy. Core execution remains usable without CBR; CBR direct-provider operation remains usable without PIO.
+
+Use the PIO client and headless test clients to validate the three together as their implementations mature. Complete standalone acceptance and publish the corresponding releases before starting thin Combraton implementation. Then use Combraton integration experiments to identify justified upstream changes. The protocol remains versioned and revisable throughout; a release is not a claim that every future integration is already solved.
+
+Existing Loom prototypes remain design references. They do not require production Combraton bindings before the standalone gates. [Standalone release gates](STANDALONE-RELEASES.md) and [PIO client semantics](https://github.com/Combraton/pio/blob/main/docs/spec/STANDALONE-CLIENT.md) define the details.
 
 For a cross-repository contract change:
 
@@ -139,21 +144,21 @@ The root instruction files are maps. Claude's `CLAUDE.md` imports the local `AGE
 
 **Requested outcome:** after a local repair, the human can inspect what the harness knew and what happened, without guessing from chat.
 
-The coordinator records the journey: a user chooses a task and scope; CBR prepares an exact cited packet; Combraton selects readiness and binds the packet; PIO starts the authorized harness and records observable delivery/execution facts; Combraton shows the outcome and CBR links the resulting evidence.
+The coordinator records the journey: a user chooses a task and scope; CBR prepares an exact cited packet; the PIO standalone client applies the user-selected context requirement and binds the packet; PIO starts the authorized harness and records observable delivery/execution facts; the TUI shows the outcome and CBR links the resulting evidence. No Combraton runtime is involved.
 
 Protocol work defines how references, packet identity, invocation identity, capability limits and observations are represented. The exact field names are chosen in the protocol task, not invented by this guide.
 
 PIO's owner implements binding and observable delivery with one real adapter. A lost acknowledgment must not result in a duplicate process. CBR's owner implements packet construction and a correction received while preparation is underway. A missing mandatory input must remain an explicit gap, not disappear into a summary.
 
-The UI owner connects a small inspector to these real states. A mock saying “delivered” is replaced with the actual observation level. If an adapter can only show that bytes were submitted, the UI must not claim the model comprehended them.
+The PIO client owner connects the TUI inspector to these real states. A mock saying “delivered” is replaced with the actual observation level. If an adapter can only show that bytes were submitted, the UI must not claim the model comprehended them.
 
 Cross-review tries to break the assumptions: wrong packet revision, a stale source, unsupported capability, duplicate event, crash between journal and dispatch, and waiting preparation whose consumer holds the needed resource. Tests are chosen for affected contracts, not added as ritual for unrelated code.
 
-The integration run records all four revisions and the fixture/environment identity. The human sees the exact packet and execution receipt. If required context is unavailable, only the named start/adoption boundary remains blocked; independently authorized investigation can continue. The coordinator closes the feature only when the evidence satisfies the original acceptance, or records an explicit scope revision.
+The integration run records Protocol, PIO, CBR and benchmark/fixture revisions plus environment identity; Combraton is explicitly absent. The human sees the exact packet and execution receipt. If required context is unavailable, only the named start/adoption boundary remains blocked; independently authorized investigation can continue. The coordinator closes the feature only when the evidence satisfies the original acceptance, or records an explicit scope revision.
 
 ## 9. Example: Loom shows a passing component check but the journey uses v1
 
-Loom's simulated worker-v2 migration is a valuable acceptance story. The desired runtime path is worker v2; component checks pass; the observed trace still says v1. The important question is where intent and reality diverge.
+After the standalone releases, Loom's simulated worker-v2 migration is a valuable Combraton acceptance story. The desired runtime path is worker v2; component checks pass; the observed trace still says v1. The important question is where intent and reality diverge.
 
 Combraton's UI must link selected direction, expected path, evidence, the challenged assumption and pending judgment. PIO reports execution facts. CBR preserves the investigation and cites its source. Routine diagnosis continues within scope. A change of architecture or production authority requires the corresponding decision; it is not inferred from an agent's confidence.
 
@@ -183,14 +188,15 @@ Ordinary implementation choices within an accepted scope can proceed. Escalate a
 
 | Phase | Practical output | Completion evidence |
 |---|---|---|
-| Development setup | Public repos, canonical specs, instructions, task/handoff templates | Fresh session can find the relevant source; documentation checks pass |
-| Foundation experiments | Narrow protocol slice; service/storage/packaging and renderer decisions | Recorded candidate versions, failure fixtures and ADRs |
-| Independent cores in parallel | One real PIO adapter; CBR evidence/revision/packet path with bounded model assistance | Standalone tests and recovery/correction cases |
-| Thin integration early | One human-steered task from context through execution to inspectable evidence | Real four-repository combination, restart and divergence evidence |
-| v0.1 releases | Scoped supported capabilities, repeatable installation and acceptance results for all four | Published limitations, compatibility and real user journey; no inflated completeness claim |
-| Later dogfooding | Consider Combraton coordinating selected changes to itself | Separate decision after usable v0.1; retain external recovery and native harness access |
+| Development setup | Public repos, canonical specs, instructions and benchmark methodology | Fresh sessions can find sources; documentation checks pass |
+| Protocol release foundation | Agreed standalone surface, concrete schemas and compatibility/conformance suite | Independent callers/providers and positive/negative fixtures |
+| PIO and CBR in parallel | Complete agreed standalone product scopes, including PIO CLI/TUI and intelligent CBR memory | Real adapter/service, recovery, retention and quality acceptance |
+| Combined standalone validation | PIO client optionally uses CBR through public profiles; no Combraton | Pinned three-product combination, fault suite and comparative evidence |
+| Standalone releases accepted | Usable documented Protocol, PIO and CBR releases | All [standalone gates](STANDALONE-RELEASES.md) satisfied against agreed scopes |
+| Thin Combraton, then expansion | Direct API integration, followed by full control-plane scope | Real steering/history journey; versioned upstream feedback |
+| Later dogfooding | Consider Combraton coordinating changes to itself | Separate decision after usable v0.1 of all four products |
 
-Rust/Tokio, independent SQLite stores and React/TypeScript remain starting preferences from the architecture baseline. Desktop shell/renderer, exact schema/framing, supported OS enforcement, adapter versions, CBR provider library/models and numerical budgets still need selection evidence. Do not call them finalized dependencies.
+Rust/Tokio, independent SQLite stores and React/TypeScript remain starting preferences from the architecture baseline. Exact schema/framing, supported OS enforcement, adapter versions, CBR provider library/models and numerical budgets still need selection evidence. Desktop shell/renderer selection moves to the later Combraton phase. Do not call these finalized dependencies.
 
 A spike should answer one blocking question with a small reproducible artifact, candidate version, success/failure criteria and fallback. For example: “Can the proposed adapter reconcile a surviving process after its parent restarts?” has a finish line. “Research all agent harnesses” does not.
 
@@ -209,3 +215,5 @@ A spike should answer one blocking question with a small reproducible artifact, 
 - Silently changing scope, permissions or acceptance to make a run succeed.
 - Installing broad hooks, global settings or memory systems before measuring their value.
 - Building a new coordination product just to coordinate building v0.1.
+
+Standalone evaluation distinguishes contract conformance, real-adapter interoperability/reliability, downstream memory/task outcomes and TUI usability. Follow the [benchmark methodology](https://github.com/Combraton/benchmarks/blob/main/docs/METHODOLOGY.md); a joint demo does not certify every profile or prove better outcomes.

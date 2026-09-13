@@ -212,3 +212,9 @@ CBR prepares reusable memory through bounded maintenance jobs, including backgro
 Comreton or the standalone caller selects advisory, required-before-transition or required-before-start context obligations. CBR returns an exact packet or explicit gaps. PIO admits authorized work with the selected binding; it does not choose mandatory project knowledge. Waiting for preparation must not consume the scarce execution slot or exclusive writer that preparation itself needs. Relevant basis changes trigger revalidation; deadlines never turn missing context into proof or consent.
 
 The detailed contract is [CBR preparation and delivery](https://github.com/Combraton/cbr/blob/main/docs/spec/PREPARATION-AND-DELIVERY.md). Optional programmatic memory workers obey CBR's scope, aggregate budgets and commit authority; they do not introduce a new project controller or require full Prime/Pi adoption.
+
+## Standalone composition before the control plane
+
+In full Combraton, the ownership table above governs project authority. Without Combraton, an explicitly bound human/caller supplies scope and context policy. PIO's [standalone application](https://github.com/Combraton/pio/blob/main/docs/spec/STANDALONE-CLIENT.md) exposes a CLI/TUI for harness discovery and management and can optionally request CBR packets. The application carries caller decisions; PIO's execution core retains execution truth and CBR retains evidence/memory truth. No Combraton graph or database is required.
+
+Combraton later calls the same public services directly and adds its own project/workflow/acceptance/history control. It does not embed or automate the PIO TUI. See [ADR 001](../decisions/001-standalone-first-and-evaluation.md) for development sequence and [benchmark methodology](https://github.com/Combraton/benchmarks/blob/main/docs/METHODOLOGY.md) for pre-Combraton evaluation.

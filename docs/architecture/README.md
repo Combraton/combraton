@@ -61,3 +61,7 @@ If current sources contradict one another, identify and resolve the specific con
 Code blocks describe conceptual contracts and examples; they are not implemented APIs. Diagrams depict the target system. Exact package versions, production performance, harness conformance, and product benefits have not been established by this documentation pass.
 
 Read [CBR preparation and delivery](https://github.com/Combraton/cbr/blob/main/docs/spec/PREPARATION-AND-DELIVERY.md) for background consolidation, progressive assimilation and context timing. The [finalization report (historical; not included)](PUBLICATION.md#historical-material) records scope and validation.
+
+## Current standalone-first build order
+
+[ADR 001](../decisions/001-standalone-first-and-evaluation.md) supersedes the earlier early-Combraton implementation sequence. Start with Protocol; complete PIO and CBR standalone scopes in parallel; validate them together through PIO's CLI/TUI and benchmark clients; then begin thin Combraton. [Release gates](../STANDALONE-RELEASES.md) define readiness.

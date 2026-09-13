@@ -57,7 +57,7 @@ These are unselected components or values, not an invitation to redesign accepte
 | Generated-program backend | Optional; deterministic tools suffice initially | After core memory proof: sandbox, resource and provenance fixtures plus measured benefit before enabling |
 | Models, limits and scheduling | Qualified models, explicit configurable limits; foreground needs precede optional maintenance | Phase 3: outcome quality at supported capacities and total cost; publish defaults and degraded behavior |
 | OS enforcement/harness support | Truthful enforced/mediated/cooperative capability reporting | Phase 2: real adapter/version, surviving-process and external-effect fault tests |
-| Spatial renderer | Semantic scene independent of library | Phase 1 prototype: continuous zoom, multiple workflows per session, keyboard equivalence and history inspection |
+| Spatial renderer | Semantic scene independent of library | Phases 5–6 Combraton selection, after standalone releases: continuous zoom, multiple workflows per session, keyboard equivalence and history inspection |
 | Grants and attention defaults | Scoped autonomy and named consequential boundaries, no approval per routine experiment | Integrated evaluation: unnecessary interruptions and human reorientation versus strong native baseline |
 | Repository slugs/releases | Four independent product/protocol repositories under Combraton | Resolved: combraton, pio, cbr and protocol; repository setup is documented in DEVELOPMENT.md |
 
@@ -76,3 +76,7 @@ Also exercise a late correction during context preparation, missing required con
 The [public import manifest](source-import.json) records the original and adapted file hashes for this edition. [Publication provenance](PUBLICATION.md) identifies the transformations and ownership. Future architecture changes require an explicit successor/change record; Git preserves previous public revisions. The local HTML edition and its manifest are not included here.
 
 Documentation checks establish readable diagrams, source consistency and local links. Product correctness, security, latency, memory quality and benefit require the acceptance work in [PLAN](PLAN.md).
+
+## Subsequent accepted clarification
+
+[ADR 001](../decisions/001-standalone-first-and-evaluation.md) selects standalone-first releases, PIO CLI/TUI as an optional CBR client, and separate benchmark infrastructure. It supersedes earlier build sequencing and clarifies caller authority without transferring project authority into PIO's execution core. Follow the current [PLAN](PLAN.md) and [release gates](../STANDALONE-RELEASES.md).

@@ -1,0 +1,221 @@
+{
+  "date": "2026-09-13",
+  "decision": "ADR 001: standalone-first and evaluation",
+  "scope": "Documentation, repository setup and documentation-checker change only",
+  "repositories": [
+    {
+      "repository": "combraton",
+      "base_commit": "9729df7590b9d5786e9b047f41d2db8fe066df4d",
+      "documentation_check": "combraton: 35 Markdown files, 300 file links, 0 errors; 0 cross-repository links not checked"
+    },
+    {
+      "repository": "pio",
+      "base_commit": "dca5572f0bf0f498c34d391fdacf0e7013a29c9a",
+      "documentation_check": "pio: 12 Markdown files, 57 file links, 0 errors; 0 cross-repository links not checked"
+    },
+    {
+      "repository": "cbr",
+      "base_commit": "6a6f4328f820f54e0cb2101a37461ee465814a36",
+      "documentation_check": "cbr: 14 Markdown files, 88 file links, 0 errors; 0 cross-repository links not checked"
+    },
+    {
+      "repository": "protocol",
+      "base_commit": "35ce78a85992450a0e5c23368d945093a8e1b6e7",
+      "documentation_check": "protocol: 10 Markdown files, 43 file links, 0 errors; 0 cross-repository links not checked"
+    },
+    {
+      "repository": "benchmarks",
+      "base_commit": "c718f1e8b49991d56ee14ffb9b6cb3ec3f5a29cf",
+      "documentation_check": "benchmarks: 11 Markdown files, 29 file links, 0 errors; 0 cross-repository links not checked"
+    }
+  ],
+  "diagrams": [
+    {
+      "file": "benchmarks/docs/METHODOLOGY.md",
+      "ok": true,
+      "bytes": 20981
+    },
+    {
+      "file": "cbr/README.md",
+      "ok": true,
+      "bytes": 15416
+    },
+    {
+      "file": "cbr/docs/spec/PREPARATION-AND-DELIVERY.md",
+      "ok": true,
+      "bytes": 24662
+    },
+    {
+      "file": "cbr/docs/spec/PREPARATION-AND-DELIVERY.md",
+      "ok": true,
+      "bytes": 27283
+    },
+    {
+      "file": "cbr/docs/spec/SPEC.md",
+      "ok": true,
+      "bytes": 25223
+    },
+    {
+      "file": "cbr/docs/spec/SPEC.md",
+      "ok": true,
+      "bytes": 23392
+    },
+    {
+      "file": "combraton/README.md",
+      "ok": true,
+      "bytes": 22078
+    },
+    {
+      "file": "combraton/docs/DEVELOPMENT.md",
+      "ok": true,
+      "bytes": 25333
+    },
+    {
+      "file": "combraton/docs/DEVELOPMENT.md",
+      "ok": true,
+      "bytes": 18320
+    },
+    {
+      "file": "combraton/docs/STANDALONE-RELEASES.md",
+      "ok": true,
+      "bytes": 23266
+    },
+    {
+      "file": "combraton/docs/architecture/ARCHITECTURE.md",
+      "ok": true,
+      "bytes": 31828
+    },
+    {
+      "file": "combraton/docs/architecture/ARCHITECTURE.md",
+      "ok": true,
+      "bytes": 20223
+    },
+    {
+      "file": "combraton/docs/architecture/BASELINE.md",
+      "ok": true,
+      "bytes": 23776
+    },
+    {
+      "file": "combraton/docs/architecture/EXTENSIONS.md",
+      "ok": true,
+      "bytes": 25393
+    },
+    {
+      "file": "combraton/docs/architecture/FLOWS.md",
+      "ok": true,
+      "bytes": 30282
+    },
+    {
+      "file": "combraton/docs/architecture/FLOWS.md",
+      "ok": true,
+      "bytes": 14220
+    },
+    {
+      "file": "combraton/docs/architecture/FLOWS.md",
+      "ok": true,
+      "bytes": 27913
+    },
+    {
+      "file": "combraton/docs/architecture/HISTORY.md",
+      "ok": true,
+      "bytes": 18648
+    },
+    {
+      "file": "combraton/docs/architecture/HISTORY.md",
+      "ok": true,
+      "bytes": 19928
+    },
+    {
+      "file": "combraton/docs/architecture/HISTORY.md",
+      "ok": true,
+      "bytes": 29435
+    },
+    {
+      "file": "combraton/docs/architecture/MODEL.md",
+      "ok": true,
+      "bytes": 19632
+    },
+    {
+      "file": "combraton/docs/architecture/PLAN.md",
+      "ok": true,
+      "bytes": 23320
+    },
+    {
+      "file": "combraton/docs/architecture/STEERING.md",
+      "ok": true,
+      "bytes": 23435
+    },
+    {
+      "file": "combraton/docs/architecture/STEERING.md",
+      "ok": true,
+      "bytes": 22532
+    },
+    {
+      "file": "combraton/docs/architecture/STORAGE.md",
+      "ok": true,
+      "bytes": 18540
+    },
+    {
+      "file": "combraton/docs/architecture/TEMPLATES.md",
+      "ok": true,
+      "bytes": 20520
+    },
+    {
+      "file": "combraton/docs/architecture/TEMPLATES.md",
+      "ok": true,
+      "bytes": 16901
+    },
+    {
+      "file": "combraton/docs/architecture/UI.md",
+      "ok": true,
+      "bytes": 15513
+    },
+    {
+      "file": "combraton/docs/architecture/VERIFICATION.md",
+      "ok": true,
+      "bytes": 20070
+    },
+    {
+      "file": "combraton/docs/architecture/VISION.md",
+      "ok": true,
+      "bytes": 19326
+    },
+    {
+      "file": "pio/docs/spec/SPEC.md",
+      "ok": true,
+      "bytes": 29104
+    },
+    {
+      "file": "pio/docs/spec/SPEC.md",
+      "ok": true,
+      "bytes": 27650
+    },
+    {
+      "file": "pio/docs/spec/STANDALONE-CLIENT.md",
+      "ok": true,
+      "bytes": 24131
+    },
+    {
+      "file": "protocol/docs/spec/SPEC.md",
+      "ok": true,
+      "bytes": 22410
+    },
+    {
+      "file": "protocol/docs/spec/SPEC.md",
+      "ok": true,
+      "bytes": 26784
+    }
+  ],
+  "checker_negative_test": "Missing cross-repository benchmarks link detected; valid link passes",
+  "runtime_benchmarks": "not implemented or run",
+  "limitations": [
+    "No live harness instruction-loading verification",
+    "No product runtime, protocol conformance, memory-quality or TUI-usability claim",
+    "Mermaid rendered locally; external URLs and Markdown fragments not exhaustively tested"
+  ],
+  "secondary_review": {
+    "purpose": "read-only boundary and stale-sequencing review; findings verified before use",
+    "reported_tokens_total": 82141,
+    "reported_cost_usd": 0.005485
+  }
+}
