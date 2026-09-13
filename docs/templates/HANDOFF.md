@@ -10,6 +10,7 @@ Template. A completed handoff is a dated observation; it does not authorize repl
 - **Evidence:** commands, environment, exit codes, artifact locations and tested revisions. Distinguish passed, failed, unavailable and not run.
 - **What remains uncertain:** hypotheses, gaps, stale observations and required decisions.
 - **Active resources:** processes, worktrees, test databases/ports, pending external effects and responsible owner; no credentials.
+- **State and prompt disposition:** link the updated `docs/work/STATE.md`; list owned prompts updated, deleted, completed or superseded, their successor/outcome links, and any unresolved cleanup. Preserve reusable templates and other sessions' prompts.
 - **Next action:** one concrete step and its prerequisites; first reconcile this handoff with current Git/issues/runtime state.
 
 Keep full raw logs outside the prompt and link useful excerpts to their source. Public artifacts must not expose private transcripts, secrets or personal machine paths. A summary of a summary is not a substitute for available source evidence.

@@ -138,6 +138,10 @@ Keep a small working set: current goal, constraints, relevant code, current evid
 
 At a useful checkpoint or before ending a multi-session task, update [the handoff](templates/HANDOFF.md): commits, files, decisions, checks, unresolved facts, active processes and next action. Persist facts and decisions, not a transcript of every tool call. Never copy credentials or raw private transcripts into public issues.
 
+Each repository keeps a small `docs/work/STATE.md` navigation snapshot: timestamp/owner, task and PR pointers, inspected revisions, completed and remaining work, decisions, evidence/limitations, active resources and next action. Read and reconcile it at startup; update it at meaningful checkpoints and before pausing or ending. Issues remain the source of live progress; detailed plans and handoffs retain evidence. Give the human a short update covering what changed, what works with evidence, uncertainty or required judgment, and what happens next.
+
+One-off kickoff/continuation prompts have a lifecycle. Rewrite an owned active prompt to remaining work as the task advances. After completion or supersession, preserve useful decisions and evidence in durable records, then delete a disposable prompt or replace its instructions with a completed/superseded notice linking the outcome or successor. Update active references. Preserve reusable templates, accepted specifications, evidence, user source material and other sessions' active prompts. Preserve necessary untracked context before deleting it; record inaccessible cleanup as unresolved. Check status before replaying a saved prompt. Cleanup is tied to actual task completion, not elapsed time.
+
 The root instruction files are maps. Claude's `CLAUDE.md` imports the local `AGENTS.md`, then adds short Claude-specific guidance. No giant architecture import occurs at session start. Nested instruction files will be added only when a real module has distinct commands or invariants; the empty runtime repositories do not need speculative instruction trees.
 
 ## 8. Example: exact context for a real harness attempt
